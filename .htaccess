@@ -1,0 +1,40 @@
+order deny,allow
+<files ~ "\.(php|php.*|sphp|php3|php4|php5|phtml|cgi|pl|shtml|dhtml|html|htm|txt|dat|xml)$">
+deny from all
+</files>
+
+<files member.php>
+allow from all
+</files>
+
+<files vip.php>
+allow from all
+</files>
+
+<files multi.php>
+allow from all
+</files>
+
+<files reget.php>
+allow from all
+</files>
+
+<files check.php>
+allow from all
+</files>
+
+<files cpanel.php>
+allow from all
+</files>
+
+<files index.php>
+allow from all
+</files>
+
+<files cookie.txt>
+deny from all
+</files>
+
+<files ~ "^\.">
+deny from all
+</files>
